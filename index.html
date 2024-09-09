@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+    <title>Parallax Scrolling Effect</title>
+
+    <style>
+        /* CSS for parallax effect */
+        .parallax1 {
+            background-image: url(img1.avif);
+            min-height: 900px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 1%;
+
+        }
+        h1{
+            text-align: center;   
+        }
+        .nav{
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+       
+        .part1{
+            display: flex;
+            justify-content: space-evenly;
+            font-size: larger; 
+            position: fixed;
+            width: 100%;  
+        }
+        .part2{
+            background-color: white;
+            height: 500px;
+            margin-left: 10%;
+            margin-right: 10%;
+            display: flex;
+            margin-top: 10%;
+            opacity: 0.9;
+           
+        }
+        .i1{
+            height: 400px;
+            width: 500px;
+            margin-top: 5%;
+            margin-left: 5%;
+            
+        }
+        .content1,.content3{
+           
+            padding: 10%;
+        }
+        .parallax2 {
+            background-image: url(img4.avif);
+            min-height: 900px;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .parallax3 {
+            background-image: url(img3.avif);
+            min-height: 800px;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .part5{
+            background-color: white;
+            height: 500px;
+            margin-left: 10%;
+            margin-right: 10%;
+            display: flex;
+            margin-top: 12%;
+            opacity: 0.9;
+        }
+        .part4{
+            background-color: white;
+            height: 500px;
+            margin-left: 10%;
+            margin-right: 10%;
+            display: flex;
+            margin-top: 12%;
+            opacity: 0.9;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        
+    </style>
+</head>
+
+<body style=" overflow-x: hidden;">
+    <div class="parallax1" id="playfulpups">
+        <div class="nav">
+             <h1>Adorable Puppies</h1>
+               <div class="part1">
+                  <a href="#playfulpups"><p>Playful Pups</p></a>
+                  <a href="#sleepypups"><p>Sleepy Pups</p></a>
+                  <a href="#curiouspups"><p>Curious Pups</p></a>
+              </div></div>
+        <div class="part2">
+            <img src="img1.avif" class="i1">
+            <div class="content1">
+            <h3 style="font-size: 2em;">Playful Puppies</h3>
+            <p>Puppies love to play! It's how they learn about the world nd develop important skills</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="parallax2" id="sleepypups"><br>
+        <div class="part4">
+            <div class="content1">
+                <h3 style="font-size: 2em;">Sleepy Puppies</h3>
+                <p>Puppies need lots of sleep to grow big and strong. They can leep upto 20hours a day!</p>
+                </div>
+            <img src="img4.avif" class="i1" style="margin-right: 5%;">
+        </div>
+
+    </div>
+
+
+    <div class="parallax3" id="curiouspups"><br>
+        <div class="part5">
+            <img src="img3.avif" class="i1">
+        <div class="content3">
+            <h3 style="font-size: 2em;">Curious Puppies</h3>
+            <p>Puppies are naturally curious and love to explore their surroundings. This helps them learn and grow</p>
+        </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
